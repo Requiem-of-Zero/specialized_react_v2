@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   NavBarWrapper,
   NavBarContainer,
@@ -24,6 +24,7 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import GlobalStyle from "../../pages/global.css";
 
 const NavBar = ({ categories }) => {
+
   return (
     <NavBarWrapper>
       <GlobalStyle />
