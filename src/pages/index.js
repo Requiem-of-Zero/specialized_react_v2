@@ -1,9 +1,12 @@
 import Head from "next/head";
 import GlobalStyle from "./global.css";
 import NavBar from "../components/NavBar/NavBar";
-import navBarData from "../components/NavBar/data/model";
 import Banner from "../components/Banner/Banner";
+import ShopTiles from "../components/ShopTiles/ShopTiles";
+
+import navBarData from "../components/NavBar/data/model";
 import { firstBannerArgs, secondBannerArgs } from "../components/Banner/data/model";
+import shopTilesArgs from "../components/ShopTiles/data/model";
 
 export default function Home() {
   return (
@@ -17,6 +20,7 @@ export default function Home() {
       <NavBar {...navBarData} />
       <Banner {...firstBannerArgs}/>
       <Banner {...secondBannerArgs}/>
+      <ShopTiles {...shopTilesArgs} />
     </div>
   );
 }
