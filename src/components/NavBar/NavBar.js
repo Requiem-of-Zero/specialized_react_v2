@@ -17,6 +17,7 @@ import {
   SearchLink,
   Logo,
 } from "./NavBar.styles";
+import DropDown from "../DropDown/DropDown";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import SearchIcon from "@mui/icons-material/Search";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
@@ -24,6 +25,8 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import GlobalStyle from "../../pages/global.css";
 
 const NavBar = ({ categories }) => {
+   const [dropDownId, setDropDownId] = useState(0);
+   const [isShown, setIsShown] = useState(false);
 
   return (
     <NavBarWrapper>
@@ -86,6 +89,8 @@ const NavBar = ({ categories }) => {
           </RightSection>
         </NavBarSectionContainer>
       </NavBarContainer>
+      {console.log(categories, "categories")}
+      <DropDown {...categories.megaNav}/>
     </NavBarWrapper>
   );
 };

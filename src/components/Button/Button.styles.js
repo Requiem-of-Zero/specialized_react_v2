@@ -9,6 +9,7 @@ export const ButtonContainer = styled.a`
   width: 134px;
   height: 40px;
   padding: 4px 16px;
+
   text-decoration: none;
   color: black;
   border: 1px solid black;
