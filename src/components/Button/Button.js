@@ -2,12 +2,14 @@ import React from "react";
 import { ButtonWrapper, ButtonContainer } from "./Button.styles";
 import GlobalStyles from "../../pages/global.css";
 
-const Button = (
-  { ctaTxt, url, opensNewTab },
-  background = '#FFF',
-  border = 'black',
-  textColor = 'black'
-) => {
+const Button = ({
+  ctaTxt,
+  url,
+  opensNewTab,
+  textColor,
+  background,
+  border,
+}) => {
   return (
     <ButtonWrapper>
       <GlobalStyles />

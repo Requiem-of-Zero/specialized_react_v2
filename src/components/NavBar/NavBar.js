@@ -17,7 +17,7 @@ import {
   SearchLink,
   Logo,
 } from "./NavBar.styles";
-import DropDown from "../DropDown/DropDown";
+import DropDown from '../DropDown/DropDown';
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import SearchIcon from "@mui/icons-material/Search";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
@@ -89,10 +89,10 @@ const NavBar = ({ categories }) => {
           </RightSection>
         </NavBarSectionContainer>
       </NavBarContainer>
-      {console.log(categories, "categories")}
-      <DropDown {...categories.megaNav}/>
+      {console.log(categories[0].megaNav, 'categories')}
+      <DropDown {...categories[0].megaNav}/>
     </NavBarWrapper>
-  );
+  )
 };
 
 export default NavBar;

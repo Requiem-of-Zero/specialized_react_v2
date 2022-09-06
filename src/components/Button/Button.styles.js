@@ -11,7 +11,8 @@ export const ButtonContainer = styled.a`
   padding: 4px 16px;
 
   text-decoration: none;
-  color: black;
-  border: 1px solid black;
+  background: ${({background}) => background};
+  color: ${({textColor}) => textColor || `black`};
+  border: 1px solid ${({border}) => border};
   border-radius: 8px;
 `;

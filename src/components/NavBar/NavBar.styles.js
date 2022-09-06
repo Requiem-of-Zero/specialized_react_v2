@@ -1,14 +1,16 @@
 import styled from "styled-components";
 
 export const NavBarWrapper = styled.div`
-  display: fixed;
+  position: fixed;
   top: 0;
   width: 100%;
   height: 32px;
+  z-index: 999;
 `;
 
 export const NavBarContainer = styled.div`
   width: inherit;
+  background: #FFF;
 `;
 
 export const SecondaryNavBarContainer = styled.div`
