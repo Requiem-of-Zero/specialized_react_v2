@@ -5,8 +5,10 @@ export const BannerWrapper = styled.div`
   align-items: center;
   justify-content: center;
   background: ${({ imgUrl }) => `url(${imgUrl})`};
-  height: 1620px;
+  height: 1080px;
   width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 `;
 
 export const BannerContainer = styled.div`
@@ -36,3 +38,9 @@ export const BannerSubHeader = styled.h5`
   text-transform: uppercase;
   padding-bottom: 7px;
 `;
+
+export const CtaContainer = styled.div`
+  display: flex;
+  gap: 1.5rem;
+`;
+

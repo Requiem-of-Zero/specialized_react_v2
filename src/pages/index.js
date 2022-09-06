@@ -3,7 +3,7 @@ import GlobalStyle from "./global.css";
 import NavBar from "../components/NavBar/NavBar";
 import navBarData from "../components/NavBar/data/model";
 import Banner from "../components/Banner/Banner";
-import bannerArgs from "../components/Banner/data/model";
+import { firstBannerArgs, secondBannerArgs } from "../components/Banner/data/model";
 
 export default function Home() {
   return (
@@ -15,7 +15,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar {...navBarData} />
-      <Banner {...bannerArgs}/>
+      <Banner {...firstBannerArgs}/>
+      <Banner {...secondBannerArgs}/>
     </div>
   );
 }

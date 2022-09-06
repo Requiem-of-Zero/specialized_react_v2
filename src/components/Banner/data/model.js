@@ -1,16 +1,21 @@
 const shopNowArgs = {
-  url: "./src/pages/Shop.js",
+  url: "https://www.google.com",
   ctaTxt: "Shop Now",
   opensNewTab: true,
+  textColor: 'black',
+  background: '#FFF',
+  border: 'transparent'
 };
 
 const learnMoreArgs = {
-  url: "./src/pages/Shop.js",
+  url: "https://www.google.com",
   ctaTxt: "Learn More",
   opensNewTab: true,
+  background: 'transprent',
+  textColor: '#FFF'
 };
 
-const bannerArgs = {
+export const firstBannerArgs = {
   justify: "flex-start",
   align: "flex-start",
   imgUrl:
@@ -20,4 +25,12 @@ const bannerArgs = {
   ctas: [shopNowArgs],
 };
 
-export default bannerArgs;
+export const secondBannerArgs = {
+  justify: "flex-end",
+  align: "flex-start",
+  imgUrl:
+    "https://www.specialized.com/medias/ROAD-5536-Homepage-Hero-2880x1620.jpg?context=bWFzdGVyfGltYWdlc3wxMjc5MjUyfGltYWdlL2pwZWd8aGI3L2hjOS85NjQzMDIzMTcxNjE0L1JPQUQtNTUzNl9fSG9tZXBhZ2VfSGVyb18yODgweDE2MjAuanBnfGExYTAyZjY2NGRmN2U1ZDI0MzljZDAwYWE1MjlhNTNmMDJmOTgzNTY4Y2YzMjc2NjZkOGI1MjRhZGZiYmQwYWI",
+  subTitle: "Remco and TT5 Helmet Dominate Vuelta TT",
+  title: 'Mach Against the Clock',
+  ctas: [shopNowArgs, learnMoreArgs]
+};

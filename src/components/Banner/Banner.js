@@ -5,6 +5,7 @@ import {
   BannerContentContainer,
   BannerHeader,
   BannerSubHeader,
+  CtaContainer
 } from "./Banner.styles";
 import Button from "../Button/Button";
 import GlobalStyles from "../../pages/global.css";
@@ -17,18 +18,17 @@ const Banner = ({ imgUrl, subTitle, title, ctas, justify, align}) => {
       <BannerContentContainer align={align}>
         <BannerSubHeader>{subTitle}</BannerSubHeader>
         <BannerHeader>{title}</BannerHeader>
+        <CtaContainer>
         {ctas.map((cta, i) => {
           const key = "cta_button-" + i;
           return (
             <Button
               {...cta}
               key={key}
-              textColor="black"
-              background="#FFF"
-              border="transparent"
             />
           );
         })}
+        </CtaContainer>
       </BannerContentContainer>
       </BannerContainer>
     </BannerWrapper>
