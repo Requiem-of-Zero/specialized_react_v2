@@ -3,10 +3,15 @@ import GlobalStyle from "./global.css";
 import NavBar from "../components/NavBar/NavBar";
 import Banner from "../components/Banner/Banner";
 import ShopTiles from "../components/ShopTiles/ShopTiles";
+import QuadBanner from "../components/QuadBanner/QuadBanner";
 
 import navBarData from "../components/NavBar/data/model";
-import { firstBannerArgs, secondBannerArgs } from "../components/Banner/data/model";
+import {
+  firstBannerArgs,
+  secondBannerArgs,
+} from "../components/Banner/data/model";
 import shopTilesArgs from "../components/ShopTiles/data/model";
+import quadBannerData from "../components/QuadBanner/data/model";
 
 export default function Home() {
   return (
@@ -18,9 +23,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar {...navBarData} />
-      <Banner {...firstBannerArgs}/>
-      <Banner {...secondBannerArgs}/>
+      <Banner {...firstBannerArgs} />
+      <Banner {...secondBannerArgs} />
       <ShopTiles {...shopTilesArgs} />
+      <QuadBanner {...quadBannerData} />
     </div>
   );
 }

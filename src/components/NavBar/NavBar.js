@@ -29,7 +29,7 @@ const NavBar = ({ categories }) => {
    const [isShown, setIsShown] = useState(false);
 
   return (
-    <NavBarWrapper>
+    <NavBarWrapper onMouseLeave={() => setIsShown(false)}>
       <GlobalStyle />
       <NavBarContainer>
         <SecondaryNavBarContainer>
@@ -68,7 +68,7 @@ const NavBar = ({ categories }) => {
               {categories.map((category, i) => {
                 return (
                   <li>
-                    <NavBarLink href={category.categoryUrl}>
+                    <NavBarLink href={category.categoryUrl} onMouseEnter={() => setIsShown(true)}>
                       {category.categoryTitle}
                     </NavBarLink>
                   </li>
@@ -89,8 +89,7 @@ const NavBar = ({ categories }) => {
           </RightSection>
         </NavBarSectionContainer>
       </NavBarContainer>
-      {console.log(categories[0].megaNav, 'categories')}
-      <DropDown {...categories[0].megaNav}/>
+      {isShown && <DropDown {...categories[0].megaNav}/>}
     </NavBarWrapper>
   )
 };

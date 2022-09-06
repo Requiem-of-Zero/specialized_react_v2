@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const DropDownWrapper = styled.div`
   height: 400px;
+  width: 100%;
+  background: #fff;
 `;
 
 export const DropDownContentContainer = styled.div`

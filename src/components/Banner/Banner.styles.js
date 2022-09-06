@@ -5,7 +5,7 @@ export const BannerWrapper = styled.div`
   align-items: center;
   justify-content: center;
   background: ${({ imgUrl }) => `url(${imgUrl})`};
-  height: 1080px;
+  height: ${({bannerHeight}) => bannerHeight};
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -21,6 +21,7 @@ export const BannerContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: ${({ align }) => align};
+  text-align: ${({align}) => align};
   width: 500px;
   height: 183px;
   letter-spacing: 1.25px;

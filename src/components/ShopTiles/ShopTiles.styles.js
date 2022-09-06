@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const TileWrapper = styled.div`
   height: 100%;
   width: 100%;
-  padding: 0 16px;
 `;
 
 export const TileContainer = styled.div`
@@ -29,6 +28,7 @@ export const ProductLink = styled.a`
 export const ProductTitle = styled.h2`
   padding: 2rem 2rem;
   font-size: 16px;
+  font-weight: 400;
 `;
 
 export const NewProductImg = styled.div``;
