@@ -8,7 +8,6 @@ import {
   SectionList,
   SectionLink,
 } from "./DropDown.styles";
-import GlobalStyles from "../../pages/global.css";
 import Button from "../Button/Button";
 import CategorySection from "../CategorySection/CategorySection";
 
@@ -29,7 +28,6 @@ const DropDown = ({
   }
   return (
     <DropDownWrapper>
-      <GlobalStyles />
       <DropDownContentContainer>
         <LeftContainer>
           <SectionList>

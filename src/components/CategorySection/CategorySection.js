@@ -6,12 +6,10 @@ import {
   ContentContainer,
   CategoryList,
 } from "./CategorySection.styles";
-import GlobalStyles from '../../pages/global.css'
 
 const CategorySection = ({ sectionTitle, sectionUrl, sectionLinks }) => {
   return (
     <CategoryWrapper>
-      <GlobalStyles/>
       <ContentContainer>
         <CategoryHeader href={sectionUrl}>{sectionTitle}</CategoryHeader>
         <CategoryList>  

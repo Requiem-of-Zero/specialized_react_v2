@@ -8,12 +8,10 @@ import {
   CtaContainer
 } from "./Banner.styles";
 import Button from "../Button/Button";
-import GlobalStyles from "../../pages/global.css";
 
 const Banner = ({ imgUrl, subTitle, title, ctas, justify, align, bannerHeight}) => {
   return (
     <BannerWrapper imgUrl={imgUrl} bannerHeight={bannerHeight}>
-      <GlobalStyles />
       <BannerContainer justify={justify}>
       <BannerContentContainer align={align}>
         <BannerSubHeader>{subTitle}</BannerSubHeader>

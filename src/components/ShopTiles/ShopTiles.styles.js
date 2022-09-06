@@ -7,8 +7,7 @@ export const TileWrapper = styled.div`
 
 export const TileContainer = styled.div`
   display: flex;
-  justify-content: center;
-  gap: 35px;
+  justify-content: space-evenly;
   padding: 32px 0;
 `;
 

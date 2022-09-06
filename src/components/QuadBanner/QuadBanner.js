@@ -1,5 +1,4 @@
 import React from "react";
-import GlobalStyles from "../../pages/global.css";
 import {
   QuadBannerWrapper,
   QuadBannerContentContainer,
