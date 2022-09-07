@@ -6,9 +6,10 @@ export const TileWrapper = styled.div`
 `;
 
 export const TileContainer = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  padding: 32px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+  padding: 32px 32px;
 `;
 
 export const ProductImg = styled.img`
