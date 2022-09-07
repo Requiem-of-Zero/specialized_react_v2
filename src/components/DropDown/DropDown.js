@@ -16,7 +16,6 @@ const DropDown = ({
   megaNavMiddleSection,
   megaNavRightSection,
 }) => {
-
   const handleMiddleColumns = (categories) => {
     const uniqueColumns = [
       ...new Set(categories.map((category) => category.column)),
@@ -28,8 +27,6 @@ const DropDown = ({
 
     return sections;
   };
-
-  console.log(megaNavMiddleSection, 'middle')
 
   return (
     <DropDownWrapper>
@@ -54,14 +51,14 @@ const DropDown = ({
           )}
         </LeftContainer>
         <MiddleContainer>
-            {megaNavMiddleSection.categorySections.map((section, i )=> {
-              return <CategorySection {...section} textColor="black" />;
-            })}
+          {megaNavMiddleSection.categorySections.map((section, i) => {
+            return <CategorySection {...section} textColor="black" />;
+          })}
         </MiddleContainer>
         <RightContainer>
           {megaNavRightSection.categorySections.map((section, i) => {
             const key = "category_section-" + i;
-            return <CategorySection {...section} key={key} textColor='black'/>;
+            return <CategorySection {...section} key={key} textColor="black" />;
           })}
         </RightContainer>
       </DropDownContentContainer>

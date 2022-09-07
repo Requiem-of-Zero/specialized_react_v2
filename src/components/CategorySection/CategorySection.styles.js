@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const CategoryWrapper = styled.div``;
+export const CategoryWrapper = styled.div`
+  height: inherit;
+  width: 25%;
+  float: left;
+`;
 
 export const ContentContainer = styled.div`
   display: flex;
@@ -8,7 +12,7 @@ export const ContentContainer = styled.div`
 `;
 
 export const CategoryHeader = styled.a`
-  color: ${({textColor}) => {textColor}};
+  color: ${({ textColor }) => textColor};
   text-decoration: none;
   padding: 3px 0 7px;
   font-size: 12px;
@@ -29,9 +33,7 @@ export const CategoryList = styled.ul`
 `;
 
 export const CategoryLink = styled.a`
-  color: ${({ textColor }) => {
-    textColor;
-  }};
+  color: ${({ textColor }) => textColor};
   text-decoration: none;
   &:hover {
     color: #ed1c24;

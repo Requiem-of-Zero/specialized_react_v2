@@ -8,14 +8,22 @@ export const DropDownWrapper = styled.div`
 
 export const DropDownContentContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 `;
 
-export const LeftContainer = styled.div``;
+export const LeftContainer = styled.div`
+  width: 20%;
+`;
 
-export const MiddleContainer = styled.div``;
+export const MiddleContainer = styled.div`
+width: 60%;
+`;
 
-export const RightContainer = styled.div``;
+export const RightContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+`;
 
 export const SectionLink = styled.a`
   color: black;
@@ -24,4 +32,5 @@ export const SectionLink = styled.a`
 
 export const SectionList = styled.ul`
   list-style: none;
+  padding: 0;
 `;
