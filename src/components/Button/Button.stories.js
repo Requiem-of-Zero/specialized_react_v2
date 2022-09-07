@@ -14,13 +14,3 @@ export const PrimaryBtn = Template.bind({});
 PrimaryBtn.args = {
   ...buttonData,
 };
-
-
-PrimaryBtn.parameters = {
-  backgrounds: {
-    values: [
-      { name: "transparent", value: "transparent" },
-      { name: "white", value: "#FFF" },
-    ],
-  },
-};

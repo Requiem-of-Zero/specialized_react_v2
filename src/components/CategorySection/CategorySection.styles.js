@@ -8,7 +8,7 @@ export const ContentContainer = styled.div`
 `;
 
 export const CategoryHeader = styled.a`
-  color: black;
+  color: ${({textColor}) => {textColor}};
   text-decoration: none;
   padding: 3px 0 7px;
   font-size: 12px;
@@ -22,13 +22,16 @@ export const CategoryHeader = styled.a`
 export const CategoryList = styled.ul`
   list-style: none;
   font-size: 12px;
+  padding: 0;
   li {
     margin-bottom: 10px;
   }
 `;
 
 export const CategoryLink = styled.a`
-  color: black;
+  color: ${({ textColor }) => {
+    textColor;
+  }};
   text-decoration: none;
   &:hover {
     color: #ed1c24;

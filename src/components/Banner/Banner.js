@@ -23,6 +23,7 @@ const Banner = ({ imgUrl, subTitle, title, ctas, justify, align, bannerHeight}) 
             <Button
               {...cta}
               key={key}
+              width='134px'
             />
           );
         })}

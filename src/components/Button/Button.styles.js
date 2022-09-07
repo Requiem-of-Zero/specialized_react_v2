@@ -6,7 +6,7 @@ export const ButtonContainer = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 134px;
+  width: ${({width}) => width};
   height: 40px;
   padding: 4px 16px;
 

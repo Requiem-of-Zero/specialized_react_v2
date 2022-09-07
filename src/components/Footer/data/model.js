@@ -144,46 +144,28 @@ const footerData = {
       ],
     },
   ],
-  socials: [
+  legalLinks: [
     {
-      platform: "Instagram",
-      redirectUrl: "https://www.instagram.com",
+      label: "Privacy",
+      url: "https://www.google.com",
+      opensNewTab: true,
     },
     {
-      platform: "Facebook",
-      redirectUrl: "https://www.facebook.com",
+      label: "Terms & Conditions",
+      url: "https://www.google.com",
+      opensNewTab: true,
     },
     {
-      platform: "Twitter",
-      redirectUrl: "https://www.twitter.com",
+      label: "Terms Of Use",
+      url: "https://www.google.com",
+      opensNewTab: true,
     },
     {
-      platform: "Youtube",
-      redirectUrl: "https://www.youtube.com",
+      label: "Do Not Sell My Personal Information (California)",
+      url: "https://www.google.com",
+      opensNewTab: true,
     },
   ],
-  legalLinks: [
-  {
-    label: "Privacy",
-    url: "https://www.google.com",
-    opensNewTab: true,
-  },
-  {
-    label: "Terms & Conditions",
-    url: "https://www.google.com",
-    opensNewTab: true,
-  },
-  {
-    label: "Terms Of Use",
-    url: "https://www.google.com",
-    opensNewTab: true,
-  },
-  {
-    label: "Do Not Sell My Personal Information (California)",
-    url: "https://www.google.com",
-    opensNewTab: true,
-  },
-]
 };
 
 export default footerData;

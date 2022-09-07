@@ -8,6 +8,7 @@ const Button = ({
   textColor,
   background,
   border,
+  width
 }) => {
   return (
     <ButtonWrapper>
@@ -17,6 +18,7 @@ const Button = ({
         border={border}
         textColor={textColor}
         target={opensNewTab ? "_blank" : "_self"}
+        width={width}
       >
         {ctaTxt}
       </ButtonContainer>
