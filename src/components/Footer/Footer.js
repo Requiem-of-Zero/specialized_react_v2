@@ -10,7 +10,8 @@ import {
   AppleGoogleFlexBox,
   NewsLetterInput,
   NewsLetterBtn,
-  NewsLetterForm
+  NewsLetterForm,
+  LegalFooter
 } from "./Footer.styles";
 
 import Button from "../Button/Button";
@@ -112,6 +113,9 @@ const Footer = ({ sections, legalLinks }) => {
           width='225px'
         />
       </FooterCTA>
+        <LegalFooter>
+            
+        </LegalFooter>
     </FooterWrapper>
   );
 };

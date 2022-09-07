@@ -4,7 +4,7 @@ export const FooterWrapper = styled.div`
   display: flex;
   justify-content: center;
   padding-top: 45px;
-  gap: 30px;
+  gap: 35px;
   height: 414px;
   background: #121212;
   letter-spacing: 1px;
@@ -30,6 +30,7 @@ export const RideAppContainer = styled.div`
 
 export const MissionControlContainer = styled.div`
   text-transform: uppercase;
+  padding-bottom: 30px;
   a {
     color: #fff;
     text-decoration: none;
@@ -67,6 +68,8 @@ export const FooterCTA = styled.div`
   p {
     color: #8e8e7e;
     padding-bottom: 46px;
+    padding-top: 14px;
+    font-size: 12px;
   }
 
   a {
@@ -100,3 +103,6 @@ export const NewsLetterForm = styled.div`
     height: 44px;
 `;
 
+export const LegalFooter = styled.div`
+  background: black;
+`;

@@ -19,6 +19,7 @@ list-style: none;
 padding: 0;
 line-height: 2;
 font-size: 12px;
+padding-top: 12px;
 `;
 
 export const FooterLink = styled.a`

@@ -4,6 +4,7 @@ import NavBar from "../components/NavBar/NavBar";
 import Banner from "../components/Banner/Banner";
 import ShopTiles from "../components/ShopTiles/ShopTiles";
 import QuadBanner from "../components/QuadBanner/QuadBanner";
+import Footer from "../components/Footer/Footer";
 
 import navBarData from "../components/NavBar/data/model";
 import {
@@ -12,6 +13,8 @@ import {
 } from "../components/Banner/data/model";
 import shopTilesArgs from "../components/ShopTiles/data/model";
 import quadBannerData from "../components/QuadBanner/data/model";
+import footerData from "../components/Footer/data/model";
+
 
 export default function Home() {
   return (
@@ -27,6 +30,7 @@ export default function Home() {
       <Banner {...secondBannerArgs} />
       <ShopTiles {...shopTilesArgs} />
       <QuadBanner {...quadBannerData} />
+      <Footer {...footerData} />
     </div>
   );
 }
