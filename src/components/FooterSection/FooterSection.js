@@ -18,8 +18,8 @@ const FooterSection = (section) => {
           {section.sectionLinks.map((link, i) => {
             const key = "footer_link-" + i;
             return (
-              <li>
-                <FooterLink href={link.url} key={key}>{link.linkText}</FooterLink>
+              <li key={key}>
+                <FooterLink href={link.url}>{link.linkText}</FooterLink>
               </li>
             );
           })}

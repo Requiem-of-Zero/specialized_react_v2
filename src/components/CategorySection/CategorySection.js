@@ -23,8 +23,8 @@ const CategorySection = ({
           {sectionTitle}
         </CategoryHeader>
         <CategoryList>
-          {sectionLinks.map((section) => (
-            <li>
+          {sectionLinks.map((section, i) => (
+            <li key={i}>
               <CategoryLink href={section.url} textColor={textColor}>
                 {section.label}
               </CategoryLink>

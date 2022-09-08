@@ -124,10 +124,8 @@ const Footer = ({ sections, legalLinks }) => {
           {legalLinks.map((link, i) => {
             const key = "legal_link-" + i;
             return (
-              <li>
-                <LegalLink href={link.url} key={key}>
-                  {link.label}
-                </LegalLink>
+              <li key={key}>
+                <LegalLink href={link.url}>{link.label}</LegalLink>
               </li>
             );
           })}

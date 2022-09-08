@@ -28,7 +28,7 @@ export const BannerContentContainer = styled.div`
 `;
 
 export const BannerHeader = styled.h2`
-  font-size: 48px;
+  font-size: ${({textSize}) => textSize};
   color: #fff;
   padding-bottom: 20px;
 `;

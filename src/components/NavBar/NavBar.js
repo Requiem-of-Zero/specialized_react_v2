@@ -18,15 +18,28 @@ import {
   Logo,
 } from "./NavBar.styles";
 import DropDown from "../DropDown/DropDown";
+import SpecialDropDown from "../SpecializedDropDown/SpecialDropDown";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import SearchIcon from "@mui/icons-material/Search";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
-const NavBar = ({ categories }) => {
+const NavBar = ({ categories, specialDropDown}) => {
   const [dropDownId, setDropDownId] = useState(0);
   const [isShown, setIsShown] = useState(false);
   
+  const currentDropDown = categories[dropDownId];
+  console.log(currentDropDown);
+  const handleDropDown = (currentMenu) => {
+    if(currentMenu.categoryTitle === 'Sale' ){
+      return <></>
+    } else if(currentMenu.categoryTitle === 'Inside Specialized') {
+      return <SpecialDropDown {...currentMenu}/>
+    }else {
+      return <DropDown {...currentMenu.megaNav}/>
+    }
+  }
+
   return (
     <NavBarWrapper onMouseLeave={() => setIsShown(false)}>
       <NavBarContainer>
@@ -64,12 +77,12 @@ const NavBar = ({ categories }) => {
           <MiddleSection>
             <ul>
               {categories.map((category, i) => {
+                const key = 'navbar_link-' + i;
                 return (
-                  <li>
+                  <li key={key}>
                     <NavBarLink
                       href={category.categoryUrl}
                       onMouseEnter={() => {
-                        console.log(category)
                         setIsShown(true);
                         setDropDownId(i);
                       }}
@@ -94,8 +107,7 @@ const NavBar = ({ categories }) => {
           </RightSection>
         </NavBarSectionContainer>
       </NavBarContainer>
-      {isShown && <DropDown {...categories[dropDownId].megaNav} />}
-
+      {isShown && handleDropDown(currentDropDown)}
     </NavBarWrapper>
   );
 };

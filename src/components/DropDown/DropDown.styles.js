@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const DropDownWrapper = styled.div`
-  padding-top: 40px;
   display: flex;
   justify-content: center;
   height: 400px;
   width: 100%;
   background: #fff;
+  font-size: 12px;
 `;
 
 export const DropDownContentContainer = styled.div`
@@ -21,7 +21,7 @@ export const Divider = styled.div`
 
 export const LeftContainer = styled.div`
   padding: 0 30px;
-  max-width: 400px;
+  width: 200px;
 `;
 
 export const MiddleContainer = styled.div`
@@ -33,7 +33,7 @@ export const RightContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0 30px;
-  max-width: 400px;
+  width: 200px;
 `;
 
 export const SectionLink = styled.a`

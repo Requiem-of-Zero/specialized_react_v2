@@ -11,9 +11,10 @@ const ShopTiles = ({ products }) => {
   return (
     <TileWrapper>
       <TileContainer>
-        {products.map((product) => {
+        {products.map((product, i ) => {
+          const key = 'tile-' + i;
           return (
-            <ProductLink href={product.redirectUrl}>
+            <ProductLink href={product.redirectUrl} key={key}>
               <ProductImg src={product.productImgUrl} />
               <ProductTitle>Shop {product.productName}</ProductTitle>
             </ProductLink>

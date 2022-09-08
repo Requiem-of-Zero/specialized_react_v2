@@ -104,25 +104,6 @@ export const navBarData = {
               ],
             },
             {
-              column: 3,
-              sectionTitle: "Kids",
-              sectionUrl: "https://www.google.com",
-              sectionLinks: [
-                {
-                  label: "Toddler (1.5-4Y)",
-                  url: "https://www.google.com",
-                },
-                {
-                  label: "Little Kids (4-7Y)",
-                  url: "https://www.google.com",
-                },
-                {
-                  label: "Big Kids (7-10+Y)",
-                  url: "https://www.google.com",
-                },
-              ],
-            },
-            {
               column: 4,
               sectionTitle: "Turbo E-Bikes",
               sectionUrl: "https://www.google.com",
@@ -137,6 +118,25 @@ export const navBarData = {
                 },
                 {
                   label: "Active",
+                  url: "https://www.google.com",
+                },
+              ],
+            },
+            {
+              column: 3,
+              sectionTitle: "Kids",
+              sectionUrl: "https://www.google.com",
+              sectionLinks: [
+                {
+                  label: "Toddler (1.5-4Y)",
+                  url: "https://www.google.com",
+                },
+                {
+                  label: "Little Kids (4-7Y)",
+                  url: "https://www.google.com",
+                },
+                {
+                  label: "Big Kids (7-10+Y)",
                   url: "https://www.google.com",
                 },
               ],
@@ -561,30 +561,42 @@ export const navBarData = {
       id: 3,
       categoryTitle: "Sale",
       categoryUrl: "https://www.google.com",
-      megaNav: {
-        megaNavLeftSection: {
-          categorySections:[]
-        },
-
-        megaNavMiddleSection: {
-        categorySections:[]},
-
-        megaNavRightSection: {
-          categorySections:[]
-        },
-      },
     },
     {
       id: 4,
       categoryTitle: "Inside Specialized",
       categoryUrl: "https://www.google.com",
-      megaNav: {
-        megaNavLeftSection: {categorySections:[]},
-
-        megaNavMiddleSection: {categorySections:[]},
-
-        megaNavRightSection: {categorySections:[]},
-      },
+      links: [
+        {
+          label: "About",
+          url: "https.www.google.com",
+        },
+        {
+          label: "Innovation",
+          url: "https.www.google.com",
+        },
+        {
+          label: "Stories",
+          url: "https.www.google.com",
+        },
+        {
+          label: "Sustainability",
+          url: "https.www.google.com",
+        },
+        {
+          label: "Retül",
+          url: "https.www.google.com",
+        },
+        {
+          label: "Outride",
+          url: "https.www.google.com",
+        },
+      ],
+      imgUrl:
+        "https://assets.specialized.com/i/specialized/inside-specialized_stories?$hybris-nav$",
+      header: "Stories",
+      subHeader:
+        "Bikes are part of a greater culture with tremendous stories. This is where you'll find them.",
     },
   ],
 };

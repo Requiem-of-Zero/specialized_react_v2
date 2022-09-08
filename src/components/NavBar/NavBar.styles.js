@@ -10,7 +10,7 @@ export const NavBarWrapper = styled.div`
 
 export const NavBarContainer = styled.div`
   width: inherit;
-  background: #FFF;
+  background: #fff;
 `;
 
 export const SecondaryNavBarContainer = styled.div`
@@ -83,7 +83,8 @@ export const NavBarSectionContainer = styled.nav`
   padding: 0 45px;
 `;
 
-export const LeftSection = styled.div``;
+export const LeftSection = styled.div`
+`;
 
 export const Logo = styled.img`
   width: 150px;
@@ -96,8 +97,8 @@ export const MiddleSection = styled.div`
     list-style: none;
     text-align: center;
     font-size: 12px;
-    li{
-        padding: 18px 24px;
+    li {
+      padding: 18px 24px;
     }
   }
   width: 600px;
@@ -139,4 +140,3 @@ export const ShoppingCartLink = styled.a`
     transform: scaleX(-1);
   }
 `;
-
