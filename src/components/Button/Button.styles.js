@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-export const ButtonWrapper = styled.div``;
+export const ButtonWrapper = styled.div`
+`;
 
 export const ButtonContainer = styled.a`
   display: flex;

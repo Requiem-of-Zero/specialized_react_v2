@@ -1,4 +1,5 @@
 const categorySectionArgs = {
+  textColor: 'black',
   sectionTitle: "Mountain",
   sectionUrl: "https://www.google.com",
   sectionLinks: [
