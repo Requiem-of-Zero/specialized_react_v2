@@ -81,10 +81,13 @@ export const NavBarSectionContainer = styled.nav`
   height: 64px;
   justify-content: space-between;
   padding: 0 45px;
+  background: ${({ selected }) => selected && `rgb(213,213,213);`}
+  background: ${({ selected }) =>
+    selected &&
+    `linear-gradient(0deg, #f2f2f2 0%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%)`} 
 `;
 
-export const LeftSection = styled.div`
-`;
+export const LeftSection = styled.div``;
 
 export const Logo = styled.img`
   width: 150px;

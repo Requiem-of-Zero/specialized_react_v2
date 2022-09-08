@@ -36,7 +36,7 @@ const DropDown = ({
             }) : <></>}
           </SectionList>
           {megaNavLeftSection.cta ? (
-            <Button {...megaNavLeftSection.cta} width="166px" />
+            <Button {...megaNavLeftSection.cta}/>
           ) : (
             <></>
           )}

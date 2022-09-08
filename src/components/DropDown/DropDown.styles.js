@@ -20,19 +20,19 @@ export const Divider = styled.div`
 `;
 
 export const LeftContainer = styled.div`
-  padding: 0 30px;
+  padding: 30px 30px 0 30px;
   width: 200px;
 `;
 
 export const MiddleContainer = styled.div`
-  padding: 0 30px;
+  padding: 30px 30px 0 30px;
   min-width: 600px;
 `;
 
 export const RightContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0 30px;
+  padding: 30px 30px 0 30px;
   width: 200px;
 `;
 

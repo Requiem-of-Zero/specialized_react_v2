@@ -9,8 +9,6 @@ import {
 } from "./SpecialDropDown.styles";
 
 const SpecialDropDown = ({ links, imgUrl, header, subHeader }) => {
-
-    console.log(links)
   return (
     <SpecialDropDownWrapper>
       <SpecialDropDownContainer>
@@ -24,7 +22,7 @@ const SpecialDropDown = ({ links, imgUrl, header, subHeader }) => {
             );
           })}
         </LinksList>
-        <BackgroundImg imgUrl={imgUrl} src={imgUrl}/>
+        <BackgroundImg src={imgUrl}/>
         <CtaContainer>
           <h2>{header}</h2>
           <p>{subHeader}</p>

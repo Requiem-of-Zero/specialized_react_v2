@@ -24,7 +24,7 @@ export const navBarData = {
             ctaTxt: "Shop By Model",
             url: "https://www.google.com",
             opensNewTab: true,
-            color: "primary_blk_brdr",
+            hover: 'e6e6e6'
           },
         },
 

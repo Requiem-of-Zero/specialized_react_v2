@@ -16,4 +16,9 @@ export const ButtonContainer = styled.a`
   color: ${({textColor}) => textColor || `black`};
   border: 1px solid ${({border}) => border};
   border-radius: 8px;
+
+  &:hover{
+    background: ${({hover}) => hover};
+    transition: all 0.25s ease;
+  }
 `;

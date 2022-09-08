@@ -116,6 +116,7 @@ const Footer = ({ sections, legalLinks }) => {
             background="#292929"
             border="transparent"
             width="225px"
+            hover="#c61017"
           />
         </FooterCTA>
       </FooterContentContainer>

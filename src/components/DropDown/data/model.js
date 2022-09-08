@@ -18,6 +18,7 @@ const megaNavData = {
       ctaTxt: "Shop By Model",
       url: "https://www.google.com",
       opensNewTab: true,
+      hover: "e6e6e6",
     },
   },
 

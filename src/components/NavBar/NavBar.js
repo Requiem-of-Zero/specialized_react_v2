@@ -24,21 +24,21 @@ import SearchIcon from "@mui/icons-material/Search";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
-const NavBar = ({ categories, specialDropDown}) => {
+const NavBar = ({ categories, specialDropDown }) => {
   const [dropDownId, setDropDownId] = useState(0);
   const [isShown, setIsShown] = useState(false);
-  
+
   const currentDropDown = categories[dropDownId];
-  console.log(currentDropDown);
+
   const handleDropDown = (currentMenu) => {
-    if(currentMenu.categoryTitle === 'Sale' ){
-      return <></>
-    } else if(currentMenu.categoryTitle === 'Inside Specialized') {
-      return <SpecialDropDown {...currentMenu}/>
-    }else {
-      return <DropDown {...currentMenu.megaNav}/>
+    if (currentMenu.categoryTitle === "Sale") {
+      return <></>;
+    } else if (currentMenu.categoryTitle === "Inside Specialized") {
+      return <SpecialDropDown {...currentMenu} />;
+    } else {
+      return <DropDown {...currentMenu.megaNav} />;
     }
-  }
+  };
 
   return (
     <NavBarWrapper onMouseLeave={() => setIsShown(false)}>
@@ -68,7 +68,7 @@ const NavBar = ({ categories, specialDropDown}) => {
             </ul>
           </SecondaryNavRightCol>
         </SecondaryNavBarContainer>
-        <NavBarSectionContainer>
+        <NavBarSectionContainer selected={isShown}>
           <LeftSection>
             <a href="">
               <Logo src="https://cdn.shopify.com/s/files/1/0904/4132/files/spec-logo-bp.jpg?v=1585000290" />
@@ -77,7 +77,7 @@ const NavBar = ({ categories, specialDropDown}) => {
           <MiddleSection>
             <ul>
               {categories.map((category, i) => {
-                const key = 'navbar_link-' + i;
+                const key = "navbar_link-" + i;
                 return (
                   <li key={key}>
                     <NavBarLink
