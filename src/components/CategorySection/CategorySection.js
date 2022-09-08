@@ -12,11 +12,12 @@ const CategorySection = ({
   sectionUrl,
   sectionLinks,
   textColor,
+  sectionWidth
 }) => {
 
 
   return (
-    <CategoryWrapper>
+    <CategoryWrapper sectionWidth={sectionWidth}>
       <ContentContainer>
         <CategoryHeader href={sectionUrl} textColor={textColor}>
           {sectionTitle}

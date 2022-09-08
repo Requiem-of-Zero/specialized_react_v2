@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const FooterWrapper = styled.div`
+export const FooterWrapper = styled.div``;
+
+export const FooterContentContainer = styled.div`
   display: flex;
   justify-content: center;
   padding-top: 45px;
@@ -37,27 +39,26 @@ export const MissionControlContainer = styled.div`
   }
 `;
 
-
 export const SocialLinksContainer = styled.ul`
-display: flex;
-gap: 6px;
-list-style: none;
-padding: 0 0 0 0;
-li a {
+  display: flex;
+  gap: 6px;
+  list-style: none;
+  padding: 0 0 0 0;
+  li a {
     color: #fff;
-}
+  }
 `;
 
 export const AppleGoogleFlexBox = styled.div`
-display: flex;
-gap: 16px;
-padding-top: 12px;
+  display: flex;
+  gap: 16px;
+  padding-top: 12px;
 `;
 
 export const FooterCTA = styled.div`
   display: flex;
   flex-direction: column;
-  width: 300px;
+  max-width: 280px;
   h5 {
     color: #fff;
     margin: 0;
@@ -87,22 +88,48 @@ export const NewsLetterInput = styled.input`
 `;
 
 export const NewsLetterBtn = styled.button`
-  background-color: #c61017;
+  background-color: red;
   color: white;
   width: 80px;
   height: 100%;
-  border-color: #c61017;
+  border-color: red;
   cursor: pointer;
   text-transform: uppercase;
-  border-top: 7px solid #c61017;
-  border-bottom: 5px solid #c61017;
+  border-top: 7px solid red;
+  border-bottom: 5px solid red;
 `;
 
-
 export const NewsLetterForm = styled.div`
-    height: 44px;
+  height: 44px;
 `;
 
 export const LegalFooter = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
   background: black;
+  height: 158px;
+  padding: 30px 0 0 0;
+  font-size: 12px;
+  text-transform: uppercase;
+`;
+
+export const LegalLinksList = styled.ul`
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+`;
+
+export const LegalLink = styled.a`
+  color: #fff;
+  text-decoration: none;
+`;
+
+
+export const CopyRight = styled.div`
+  color: #fff;
 `;

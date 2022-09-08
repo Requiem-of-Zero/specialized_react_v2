@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CategoryWrapper = styled.div`
   height: inherit;
-  width: 25%;
+  width: ${({sectionWidth}) => sectionWidth};
   float: left;
 `;
 
@@ -26,6 +26,7 @@ export const CategoryHeader = styled.a`
 export const CategoryList = styled.ul`
   list-style: none;
   font-size: 12px;
+  padding-bottom: 30px;
   padding: 0;
   li {
     margin-bottom: 10px;

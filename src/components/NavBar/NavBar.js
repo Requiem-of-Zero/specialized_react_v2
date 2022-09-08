@@ -17,20 +17,18 @@ import {
   SearchLink,
   Logo,
 } from "./NavBar.styles";
-import DropDown from '../DropDown/DropDown';
+import DropDown from "../DropDown/DropDown";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import SearchIcon from "@mui/icons-material/Search";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import GlobalStyle from "../../pages/global.css";
 
 const NavBar = ({ categories }) => {
-   const [dropDownId, setDropDownId] = useState(0);
-   const [isShown, setIsShown] = useState(false);
-
+  const [dropDownId, setDropDownId] = useState(0);
+  const [isShown, setIsShown] = useState(false);
+  
   return (
     <NavBarWrapper onMouseLeave={() => setIsShown(false)}>
-      <GlobalStyle />
       <NavBarContainer>
         <SecondaryNavBarContainer>
           <p>
@@ -68,7 +66,14 @@ const NavBar = ({ categories }) => {
               {categories.map((category, i) => {
                 return (
                   <li>
-                    <NavBarLink href={category.categoryUrl} onMouseEnter={() => setIsShown(true)}>
+                    <NavBarLink
+                      href={category.categoryUrl}
+                      onMouseEnter={() => {
+                        console.log(category)
+                        setIsShown(true);
+                        setDropDownId(i);
+                      }}
+                    >
                       {category.categoryTitle}
                     </NavBarLink>
                   </li>
@@ -89,9 +94,10 @@ const NavBar = ({ categories }) => {
           </RightSection>
         </NavBarSectionContainer>
       </NavBarContainer>
-      {isShown && <DropDown {...categories[0].megaNav}/>}
+      {isShown && <DropDown {...categories[dropDownId].megaNav} />}
+
     </NavBarWrapper>
-  )
+  );
 };
 
 export default NavBar;
