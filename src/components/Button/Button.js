@@ -9,7 +9,7 @@ const Button = ({
   background,
   border,
   width,
-  hover
+  hover,
 }) => {
   return (
     <ButtonWrapper>

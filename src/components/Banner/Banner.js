@@ -7,6 +7,7 @@ import {
   BannerSubHeader,
   CtaContainer,
 } from "./Banner.styles";
+import { ContentfulClient, ContentfulProvider } from 'react-contentful';
 import Button from "../Button/Button";
 
 const Banner = ({

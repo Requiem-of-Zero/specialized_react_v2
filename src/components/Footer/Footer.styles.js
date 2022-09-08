@@ -85,6 +85,7 @@ export const NewsLetterInput = styled.input`
   font-size: 14px;
   padding-left: 9px;
   border: none;
+  color: #fff;
 `;
 
 export const NewsLetterBtn = styled.button`
@@ -128,7 +129,6 @@ export const LegalLink = styled.a`
   color: #fff;
   text-decoration: none;
 `;
-
 
 export const CopyRight = styled.div`
   color: #fff;
