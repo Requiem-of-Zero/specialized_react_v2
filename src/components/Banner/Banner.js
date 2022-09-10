@@ -8,6 +8,7 @@ import {
   CtaContainer,
 } from "./Banner.styles";
 import Button from "../Button/Button";
+
 const Banner = ({
   imgUrl,
   subTitle,
@@ -25,10 +26,10 @@ const Banner = ({
           <BannerSubHeader>{subTitle}</BannerSubHeader>
           <BannerHeader textSize={textSize}>{title}</BannerHeader>
           <CtaContainer>
-            {ctas.map((cta, i) => {
+            {ctas && ctas.map((cta, i) => {
               const key = "cta_button-" + i;
               return <Button {...cta} key={key} width="134px" />;
-            })}
+            })} 
           </CtaContainer>
         </BannerContentContainer>
       </BannerContainer>
