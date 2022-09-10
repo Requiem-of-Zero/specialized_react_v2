@@ -15,6 +15,23 @@ import shopTilesArgs from "../components/ShopTiles/data/model";
 import quadBannerData from "../components/QuadBanner/data/model";
 import footerData from "../components/Footer/data/model";
 
+const contentful = require("contentful");
+
+const client = contentful.createClient({
+  space: process.env.CONTENTFUL_SPACE_ID,
+  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+});
+console.log(client);
+export async function getStaticProps() {
+  const bannerData = await client.getEntry("5K75AlmWdrMgGx8oaTGxJl")
+
+    return {
+      props: {
+        ...bannerData.fields
+      }
+    }
+}
+
 
 export default function Home() {
   return (

@@ -16,6 +16,7 @@
     "@mui/icons-material": "^5.10.3",
     "@mui/material": "^5.10.3",
     "@mui/styled-engine-sc": "^5.10.3",
+    "contentful": "^9.1.34",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-contentful": "^2.0.31",

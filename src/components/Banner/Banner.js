@@ -7,9 +7,7 @@ import {
   BannerSubHeader,
   CtaContainer,
 } from "./Banner.styles";
-import { ContentfulClient, ContentfulProvider } from 'react-contentful';
 import Button from "../Button/Button";
-
 const Banner = ({
   imgUrl,
   subTitle,
@@ -18,14 +16,14 @@ const Banner = ({
   justify,
   align,
   bannerHeight,
-  textSize
+  textSize,
 }) => {
   return (
     <BannerWrapper imgUrl={imgUrl} bannerHeight={bannerHeight}>
       <BannerContainer justify={justify}>
         <BannerContentContainer align={align}>
           <BannerSubHeader>{subTitle}</BannerSubHeader>
-          <BannerHeader textSize={textSize} >{title}</BannerHeader>
+          <BannerHeader textSize={textSize}>{title}</BannerHeader>
           <CtaContainer>
             {ctas.map((cta, i) => {
               const key = "cta_button-" + i;
