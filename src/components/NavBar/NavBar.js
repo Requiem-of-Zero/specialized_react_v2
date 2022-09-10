@@ -24,7 +24,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
-const NavBar = ({ categories, specialDropDown }) => {
+const NavBar = ({ categories }) => {
   const [dropDownId, setDropDownId] = useState(0);
   const [isShown, setIsShown] = useState(false);
 

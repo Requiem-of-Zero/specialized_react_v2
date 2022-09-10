@@ -1,7 +1,6 @@
 export const navBarData = {
   categories: [
     {
-      id: 0,
       categoryTitle: "Bikes",
       categoryUrl: "https://www.google.com",
       megaNav: {
@@ -31,7 +30,6 @@ export const navBarData = {
         megaNavMiddleSection: {
           categorySections: [
             {
-              column: 1,
               sectionTitle: "Mountain",
               sectionUrl: "https://www.google.com",
               sectionLinks: [
