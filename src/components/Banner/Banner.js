@@ -28,7 +28,7 @@ const Banner = ({
           <CtaContainer>
             {ctas && ctas.map((cta, i) => {
               const key = "cta_button-" + i;
-              return <Button {...cta} key={key} width="134px" />;
+              return <Button {...cta.fields} key={key} width="134px" />;
             })} 
           </CtaContainer>
         </BannerContentContainer>

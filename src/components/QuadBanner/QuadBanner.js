@@ -6,7 +6,18 @@ import {
 } from "./QuadBanner.styles";
 import Banner from "../Banner/Banner";
 
-const QuadBanner = ({ banners }) => {
+const QuadBanner = ({ banners } ) => {
+  const quadBannerImgUrls = (banners) => {
+    const urls = [];
+    for(let i=0; i < banners.length; i++){
+      const indivBanner = banners[i];
+      const imgUrl = indivBanner.fields.bannerImage.fields.file.url
+      urls.push(imgUrl)
+    }
+    return urls;
+  }
+
+  const quadBannerUrlArray = quadBannerImgUrls(banners);
   return (
     <QuadBannerWrapper>
       <QuadBannerContentContainer>
@@ -14,7 +25,7 @@ const QuadBanner = ({ banners }) => {
             const key = 'banner_block-' + i;
             return (
               <BannerContainer key={key}>
-                <Banner {...banner} bannerHeight="600px" />
+                <Banner {...banner.fields} imgUrl={quadBannerUrlArray[i]}/>
               </BannerContainer>
             );
         })}
