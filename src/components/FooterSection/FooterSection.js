@@ -7,7 +7,6 @@ import {
   FooterLink
 } from "./FooterSection.styles";
 const FooterSection = (section) => {
-
   return (
     <FooterSectionWrapper>
       <FooterSectionContentContainer>
@@ -19,7 +18,7 @@ const FooterSection = (section) => {
             const key = "footer_link-" + i;
             return (
               <li key={key}>
-                <FooterLink href={link.url}>{link.linkText}</FooterLink>
+                <FooterLink href={link.fields.url}>{link.fields.label}</FooterLink>
               </li>
             );
           })}

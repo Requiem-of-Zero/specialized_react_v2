@@ -15,7 +15,7 @@ import {
   LegalFooter,
   LegalLink,
   LegalLinksList,
-  CopyRight
+  CopyRight,
 } from "./Footer.styles";
 
 import Button from "../Button/Button";
@@ -25,12 +25,23 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import FooterSection from "../FooterSection/FooterSection";
 
-const Footer = ({ sections, legalLinks }) => {
+const Footer = ({ sections, legalList }) => {
+  const resolveSectionsObj = (sections) => {
+    const result = [];
+    for (let i = 0; i < sections.length; i++) {
+      const { fields } = sections[i];
+      result.push(fields);
+    }
+    return result;
+  };
+
+  const categorySection = resolveSectionsObj(sections);
+  
   return (
     <FooterWrapper>
       <FooterContentContainer>
         <FooterSectionContainer>
-          {sections.map((section, i) => {
+          {categorySection.map((section, i) => {
             const key = "footer_section-" + i;
             return <FooterSection {...section} key={key} />;
           })}
@@ -122,11 +133,14 @@ const Footer = ({ sections, legalLinks }) => {
       </FooterContentContainer>
       <LegalFooter>
         <LegalLinksList>
-          {legalLinks.map((link, i) => {
+          {legalList.legalLinks.map((link, i) => {
+            const {url, label} = link.fields
             const key = "legal_link-" + i;
             return (
               <li key={key}>
-                <LegalLink href={link.url}>{link.label}</LegalLink>
+                <LegalLink href={url}>
+                  {label}
+                </LegalLink>
               </li>
             );
           })}

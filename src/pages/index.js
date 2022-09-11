@@ -14,24 +14,7 @@ import {
 } from "../components/Banner/data/model";
 import shopTilesArgs from "../components/ShopTiles/data/model";
 import quadBannerData from "../components/QuadBanner/data/model";
-import footerData from "../components/Footer/data/model";
 import getEntryById from "../util/getEntryById";
-
-// const contentful = require("contentful");
-// const client = contentful.createClient({
-//   space: process.env.CONTENTFUL_SPACE_ID,
-//   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-// });
-
-// export async function getStaticProps() {
-//   const bannerData = await client.getEntry("5K75AlmWdrMgGx8oaTGxJl")
-//   await axios.get('')
-//     return {
-//       props: {
-//         ...bannerData.fields
-//       }
-//     }
-// }
 
 export async function getStaticProps() {
   const firstBannerData = await getEntryById("5K75AlmWdrMgGx8oaTGxJl");
@@ -42,12 +25,15 @@ export async function getStaticProps() {
 
   const shopTilesData = await getEntryById("WIZyeiugk3K0rOvfZ81Jx");
 
+  const footerData = await getEntryById("17zOz1iVrnlrFwonroGBQX");
+
   return {
     props: {
       firstBannerData,
       secondBannerData,
       quadBannerData,
-      shopTilesData
+      shopTilesData,
+      footerData
     },
   };
 }
@@ -56,7 +42,8 @@ export default function Home({
   firstBannerData,
   secondBannerData,
   quadBannerData,
-  shopTilesData
+  shopTilesData,
+  footerData
 }) {
   const bannerImageUrl = (bannerData) => {
     const url = bannerData.bannerImage.file.url;
@@ -66,7 +53,6 @@ export default function Home({
   const firstBannerImgUrl = bannerImageUrl(firstBannerData);
   const secondBannerImageUrl = bannerImageUrl(secondBannerData);
 
-  console.log(shopTilesData)
   return (
     <div>
       <GlobalStyle />
