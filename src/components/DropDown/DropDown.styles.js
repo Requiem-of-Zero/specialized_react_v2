@@ -26,7 +26,7 @@ export const LeftContainer = styled.div`
 
 export const MiddleContainer = styled.div`
   padding: 30px 30px 0 30px;
-  min-width: 600px;
+  width: 600px;
 `;
 
 export const RightContainer = styled.div`

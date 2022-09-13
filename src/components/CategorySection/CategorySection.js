@@ -6,7 +6,6 @@ import {
   ContentContainer,
   CategoryList,
 } from "./CategorySection.styles";
-import getEntryById from "../../util/getEntryById";
 
 const CategorySection = ({
   sectionTitle,
