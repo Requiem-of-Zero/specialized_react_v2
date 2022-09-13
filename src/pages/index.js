@@ -6,14 +6,6 @@ import ShopTiles from "../components/ShopTiles/ShopTiles";
 import QuadBanner from "../components/QuadBanner/QuadBanner";
 import Footer from "../components/Footer/Footer";
 
-import axios from "axios";
-import navBarData from "../components/NavBar/data/model";
-import {
-  firstBannerArgs,
-  secondBannerArgs,
-} from "../components/Banner/data/model";
-import shopTilesArgs from "../components/ShopTiles/data/model";
-import quadBannerData from "../components/QuadBanner/data/model";
 import getEntryById from "../util/getEntryById";
 import handleData from "../util/handleListData";
 
@@ -42,7 +34,7 @@ export default function Home({
   
   const firstBannerImgUrl = bannerImageUrl(bannerData.banners[0]);
   const secondBannerImageUrl = bannerImageUrl(bannerData.banners[1]);
-  
+
   return (
     <div>
       <GlobalStyle />

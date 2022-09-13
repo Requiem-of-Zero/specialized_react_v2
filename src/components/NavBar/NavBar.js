@@ -39,7 +39,7 @@ const NavBar = ({ navigation }) => {
       return <DropDown {...currentMenu} />;
     }
   };
-  console.log('Drop Down: ', currentDropDown)
+
   return (
     <NavBarWrapper onMouseLeave={() => setIsShown(false)}>
       <NavBarContainer>

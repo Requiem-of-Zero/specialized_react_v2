@@ -7,7 +7,7 @@ import {
   CategoryList,
 } from "./CategorySection.styles";
 import getEntryById from "../../util/getEntryById";
-import resolveResponse from "contentful-resolve-response";
+
 const CategorySection = ({
   sectionTitle,
   sectionUrl,
@@ -15,7 +15,7 @@ const CategorySection = ({
   textColor,
   sectionWidth
 }) => {
-  console.log('sectionLinks: ', sectionLinks);
+
   return (
     <CategoryWrapper sectionWidth={sectionWidth}>
       <ContentContainer>
@@ -23,13 +23,13 @@ const CategorySection = ({
           {sectionTitle}
         </CategoryHeader>
         <CategoryList>
-          {sectionLinks.map((section, i) => (
-            <li key={i}>
-              <CategoryLink href={section.url} textColor={textColor}>
-                {section.label}
+          {sectionLinks.map((section, i) => {
+            return <li key={i}>
+              <CategoryLink href={section.fields.url} textColor={textColor}>
+                {section.fields.label}
               </CategoryLink>
             </li>
-          ))}
+        })}
         </CategoryList>
       </ContentContainer>
     </CategoryWrapper>

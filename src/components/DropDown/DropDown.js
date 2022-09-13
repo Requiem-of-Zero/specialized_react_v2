@@ -18,7 +18,7 @@ const DropDown = ({
   rightSection,
 }) => {
   const {links} = leftSection.fields
-  const {categorySections, sectionTitle} = middleSection.fields;
+  const {categorySections} = middleSection.fields;
   
   const cta = leftSection.fields.cta ? leftSection.fields.cta.fields : '';
 
