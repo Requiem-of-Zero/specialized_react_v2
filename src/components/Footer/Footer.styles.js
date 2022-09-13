@@ -67,7 +67,7 @@ export const FooterCTA = styled.div`
   }
 
   p {
-    color: #8e8e7e;
+    color: #8e8e8e;
     padding-bottom: 46px;
     padding-top: 14px;
     font-size: 12px;

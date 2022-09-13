@@ -13,8 +13,9 @@ export const BannerWrapper = styled.div`
 
 export const BannerContainer = styled.div`
   display: flex;
-  justify-content: ${({justify}) => justify};
+  justify-content: ${({ justify }) => justify};
   width: 90%;
+  cursor: default;
 `;
 
 export const BannerContentContainer = styled.div`
