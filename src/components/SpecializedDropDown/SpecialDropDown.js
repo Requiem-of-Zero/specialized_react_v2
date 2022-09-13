@@ -8,7 +8,9 @@ import {
   CtaContainer,
 } from "./SpecialDropDown.styles";
 
-const SpecialDropDown = ({ links, imgUrl, header, subHeader }) => {
+const SpecialDropDown = ({ leftSection }) => {
+  const {links, backgroundImage, subHeader, header} = leftSection.fields
+  const imgUrl = backgroundImage[0].fields.file.url
   return (
     <SpecialDropDownWrapper>
       <SpecialDropDownContainer>
@@ -17,7 +19,7 @@ const SpecialDropDown = ({ links, imgUrl, header, subHeader }) => {
             const key = "specialized_link-" + i;
             return (
               <li key={key}>
-                <NavLink href={link.url}>{link.label}</NavLink>
+                <NavLink href={link.fields.url}>{link.fields.label}</NavLink>
               </li>
             );
           })}

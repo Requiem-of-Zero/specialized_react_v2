@@ -62,12 +62,12 @@ const DropDown = ({
           })}
         </MiddleContainer>
         <Divider />
-        {/* <RightContainer>
-          {rightSection ? rightSection.categorySections.map((section, i) => {
+        <RightContainer>
+          {rightSection ? rightSection.fields.categorySections.map((section, i) => {
             const key = "category_section-" + i;
-            return <CategorySection {...section} key={key} textColor="black" />;
+            return <CategorySection {...section.fields} key={key} textColor="black" />;
           }) : <></>}
-        </RightContainer> */}
+        </RightContainer>
       </DropDownContentContainer>
     </DropDownWrapper>
   );

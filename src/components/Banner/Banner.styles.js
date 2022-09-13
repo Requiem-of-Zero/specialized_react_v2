@@ -31,7 +31,6 @@ export const BannerHeader = styled.h2`
   font-size: ${({textSize}) => textSize};
   color: #fff;
   padding-bottom: 20px;
-  padding-right: 50px;
 `;
 
 export const BannerSubHeader = styled.h5`

@@ -7,7 +7,7 @@ import {
   CategoryList,
 } from "./CategorySection.styles";
 import getEntryById from "../../util/getEntryById";
-
+import resolveResponse from "contentful-resolve-response";
 const CategorySection = ({
   sectionTitle,
   sectionUrl,
@@ -15,8 +15,7 @@ const CategorySection = ({
   textColor,
   sectionWidth
 }) => {
-
-  // console.log('sectionLinks: ', sectionLinks)
+  console.log('sectionLinks: ', sectionLinks);
   return (
     <CategoryWrapper sectionWidth={sectionWidth}>
       <ContentContainer>
