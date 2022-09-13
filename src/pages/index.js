@@ -15,44 +15,34 @@ import {
 import shopTilesArgs from "../components/ShopTiles/data/model";
 import quadBannerData from "../components/QuadBanner/data/model";
 import getEntryById from "../util/getEntryById";
+import handleData from "../util/handleListData";
 
 export async function getStaticProps() {
-  const firstBannerData = await getEntryById("5K75AlmWdrMgGx8oaTGxJl");
-
-  const secondBannerData = await getEntryById("5cgpQwBIJKUrPOirROXl7u");
-
-  const quadBannerData = await getEntryById("5x5jWcqG2TefEAgDnbt6tK");
-
-  const shopTilesData = await getEntryById("WIZyeiugk3K0rOvfZ81Jx");
-
-  const footerData = await getEntryById("17zOz1iVrnlrFwonroGBQX");
+  const homePageData = await getEntryById("2yDnaEl7GGyAaeEZ9Rzhir");
 
   return {
     props: {
-      firstBannerData,
-      secondBannerData,
-      quadBannerData,
-      shopTilesData,
-      footerData
+      homePageData
     },
   };
 }
 
 export default function Home({
-  firstBannerData,
-  secondBannerData,
-  quadBannerData,
-  shopTilesData,
-  footerData
+  homePageData
 }) {
   const bannerImageUrl = (bannerData) => {
-    const url = bannerData.bannerImage.file.url;
+    const {url} = bannerData.bannerImage.fields.file;
     return url;
   };
 
-  const firstBannerImgUrl = bannerImageUrl(firstBannerData);
-  const secondBannerImageUrl = bannerImageUrl(secondBannerData);
-
+  const {navigation, banners, shopTiles, quadBanner, footer} = homePageData;
+  
+  const navBarData = handleData(navigation, 'navigation');
+  const bannerData = handleData(banners, 'banners');
+  
+  const firstBannerImgUrl = bannerImageUrl(bannerData.banners[0]);
+  const secondBannerImageUrl = bannerImageUrl(bannerData.banners[1]);
+  
   return (
     <div>
       <GlobalStyle />
@@ -62,11 +52,11 @@ export default function Home({
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar {...navBarData} />
-      <Banner {...firstBannerData} imgUrl={firstBannerImgUrl} />
-      <Banner {...secondBannerData} imgUrl={secondBannerImageUrl} />
-      <ShopTiles {...shopTilesData} />
-      <QuadBanner {...quadBannerData} />
-      <Footer {...footerData} />
+      <Banner {...bannerData.banners[0]} imgUrl={firstBannerImgUrl} />
+      <Banner {...bannerData.banners[1]} imgUrl={secondBannerImageUrl} />
+      <ShopTiles {...shopTiles} />
+      <QuadBanner {...quadBanner} />
+      <Footer {...footer} />
     </div>
   );
 }

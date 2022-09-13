@@ -13,30 +13,35 @@ import Button from "../Button/Button";
 import CategorySection from "../CategorySection/CategorySection";
 
 const DropDown = ({
-  megaNavLeftSection,
-  megaNavMiddleSection,
-  megaNavRightSection,
+  leftSection,
+  middleSection,
+  rightSection,
 }) => {
-  const { categorySections } = megaNavMiddleSection;
+  const {links} = leftSection.fields
+  const {categorySections, sectionTitle} = middleSection.fields;
+  
+  const cta = leftSection.fields.cta ? leftSection.fields.cta.fields : '';
 
   return (
     <DropDownWrapper>
       <DropDownContentContainer>
         <LeftContainer>
           <SectionList>
-            {megaNavLeftSection ? megaNavLeftSection.links.map((section, i) => {
-              const key = "section_link-" + i;
-              return (
-                <li>
-                  <SectionLink href={section.url} key={key}>
-                    {section.label}
-                  </SectionLink>
-                </li>
-              );
-            }) : <></>}
+            {links &&
+              links.map((section, i) => {
+                const key = "section_link-" + i;
+                const { label, url } = section.fields;
+                return (
+                  <li>
+                    <SectionLink href={url} key={key}>
+                      {label}
+                    </SectionLink>
+                  </li>
+                );
+              })}
           </SectionList>
-          {megaNavLeftSection.cta ? (
-            <Button {...megaNavLeftSection.cta}/>
+          {cta ? (
+            <Button {...cta} />
           ) : (
             <></>
           )}
@@ -45,23 +50,24 @@ const DropDown = ({
         <MiddleContainer>
           {categorySections.map((section, i) => {
             const key = "middle_category_section-" + i;
+            console.log(section);
             return (
               <CategorySection
                 key={key}
                 sectionWidth="25%"
                 textColor="black"
-                {...section}
+                {...section.fields}
               />
             );
           })}
         </MiddleContainer>
         <Divider />
-        <RightContainer>
-          {megaNavRightSection ? megaNavRightSection.categorySections.map((section, i) => {
+        {/* <RightContainer>
+          {rightSection ? rightSection.categorySections.map((section, i) => {
             const key = "category_section-" + i;
             return <CategorySection {...section} key={key} textColor="black" />;
           }) : <></>}
-        </RightContainer>
+        </RightContainer> */}
       </DropDownContentContainer>
     </DropDownWrapper>
   );

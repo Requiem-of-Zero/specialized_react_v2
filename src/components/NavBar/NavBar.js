@@ -24,11 +24,11 @@ import SearchIcon from "@mui/icons-material/Search";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
-const NavBar = ({ categories }) => {
+const NavBar = ({ navigation }) => {
   const [dropDownId, setDropDownId] = useState(0);
   const [isShown, setIsShown] = useState(false);
 
-  const currentDropDown = categories[dropDownId];
+  const currentDropDown = navigation[dropDownId];
 
   const handleDropDown = (currentMenu) => {
     if (currentMenu.categoryTitle === "Sale") {
@@ -36,7 +36,7 @@ const NavBar = ({ categories }) => {
     } else if (currentMenu.categoryTitle === "Inside Specialized") {
       return <SpecialDropDown {...currentMenu} />;
     } else {
-      return <DropDown {...currentMenu.megaNav} />;
+      return <DropDown {...currentMenu} />;
     }
   };
 
@@ -76,7 +76,7 @@ const NavBar = ({ categories }) => {
           </LeftSection>
           <MiddleSection>
             <ul>
-              {categories.map((category, i) => {
+              {navigation.map((category, i) => {
                 const key = "navbar_link-" + i;
                 return (
                   <li key={key}>

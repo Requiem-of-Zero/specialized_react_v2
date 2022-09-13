@@ -134,7 +134,7 @@ export const navBarData = {
                   url: "https://www.google.com",
                 },
                 {
-                  label: "Big Kids (7-10+Y)",
+                  label: "Big Kids (7-10+ Y)",
                   url: "https://www.google.com",
                 },
               ],

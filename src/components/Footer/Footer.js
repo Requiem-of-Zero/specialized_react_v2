@@ -133,7 +133,7 @@ const Footer = ({ sections, legalList }) => {
       </FooterContentContainer>
       <LegalFooter>
         <LegalLinksList>
-          {legalList.legalLinks.map((link, i) => {
+          {legalList.fields.legalLinks.map((link, i) => {
             const {url, label} = link.fields
             const key = "legal_link-" + i;
             return (

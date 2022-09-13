@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {
   CategoryWrapper,
   CategoryHeader,
@@ -6,6 +6,7 @@ import {
   ContentContainer,
   CategoryList,
 } from "./CategorySection.styles";
+import getEntryById from "../../util/getEntryById";
 
 const CategorySection = ({
   sectionTitle,
@@ -15,7 +16,7 @@ const CategorySection = ({
   sectionWidth
 }) => {
 
-
+  // console.log('sectionLinks: ', sectionLinks)
   return (
     <CategoryWrapper sectionWidth={sectionWidth}>
       <ContentContainer>
