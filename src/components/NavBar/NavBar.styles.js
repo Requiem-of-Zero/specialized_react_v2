@@ -6,6 +6,7 @@ export const NavBarWrapper = styled.div`
   width: 100%;
   height: 32px;
   z-index: 999;
+  display: block;
 `;
 
 export const NavBarContainer = styled.div`

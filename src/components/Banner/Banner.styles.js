@@ -22,7 +22,7 @@ export const BannerContentContainer = styled.div`
   flex-direction: column;
   align-items: ${({ align }) => align};
   text-align: ${({align}) => align};
-  width: 500px;
+  width: 600px;
   height: 183px;
   letter-spacing: 1.25px;
 `;
@@ -31,6 +31,7 @@ export const BannerHeader = styled.h2`
   font-size: ${({textSize}) => textSize};
   color: #fff;
   padding-bottom: 20px;
+  padding-right: 50px;
 `;
 
 export const BannerSubHeader = styled.h5`
@@ -38,6 +39,7 @@ export const BannerSubHeader = styled.h5`
   font-size: 12px;
   text-transform: uppercase;
   padding-bottom: 7px;
+  font-weight: 400;
 `;
 
 export const CtaContainer = styled.div`
