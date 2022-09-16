@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     .navBarDivider {
-        height: 100px;
+        height: 90px;
     }
 `;
 
