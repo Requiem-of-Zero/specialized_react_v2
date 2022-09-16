@@ -63,7 +63,9 @@ const NavBar = ({ navigation }) => {
                 <LanguageLink href="#En">En</LanguageLink>
               </li>
               <li>
-                <SignInLink href="#SignIn">Sign In</SignInLink>
+                <SignInLink href="">
+                  Sign In
+                </SignInLink>
               </li>
             </ul>
           </SecondaryNavRightCol>
