@@ -63,7 +63,7 @@ const NavBar = ({ navigation }) => {
                 <LanguageLink href="#En">En</LanguageLink>
               </li>
               <li>
-                <SignInLink href="">
+                <SignInLink href="http://localhost:3000/login">
                   Sign In
                 </SignInLink>
               </li>
