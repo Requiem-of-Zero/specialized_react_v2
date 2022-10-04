@@ -61,10 +61,10 @@ const Banner = ({
 
 ## Dynamic Nav Bar
 ### My Version
-<img src='https://imgur.com/0P2xahp' width='800' height='auto'>
+<img src='https://imgur.com/0P2xahp/' width='800' height='auto'>
 
 ## Actual Site
-<img src='https://imgur.com/BH7WhYK' width='800' height='auto'>
+<img src='https://imgur.com/BH7WhYK/' width='800' height='auto'>
 
 Using styled-components makes it easier to differentiate between divs and parent-children relationships.
 
