@@ -61,12 +61,11 @@ const Banner = ({
 
 ## Dynamic Nav Bar
 ### My Version
-
-<img src='/src/assets/images/specialized_mine.png' width='800' height='auto'>
+![](https://github.com/Requiem-of-Zero/specialized_react_v2/blob/main/src/assets/images/my-nav.gif)
 
 
 ## Actual Site
-<img src='/src/assets/images/specialized_mine.png' width='800' height='auto'>
+![](https://github.com/Requiem-of-Zero/specialized_react_v2/blob/main/src/assets/images/actual-nav.gif)
 
 Using styled-components makes it easier to differentiate between divs and parent-children relationships.
 
