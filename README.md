@@ -9,12 +9,14 @@ This project was my own individual test of taking on a challenge of learning new
 npm install
 # then
 npm run dev
+
 # or
+
 yarn install
 #then
 yarn dev
 ```
-<img src='/src/assets/images/specialized_ming.png' width='800' height='auto'>
+<img src='/src/assets/images/specialized_mine.png' width='800' height='auto'>
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
