@@ -1,7 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 # Specialized Clone
-This is a clone of [Specialized](https://www.specialized.com/us/en) created with Contentful CMS and NextJS/React stack. Utility libraries used for organization was Styled-Components and Storybook for component documentation.
+This is a clone of [Specialized](https://www.specialized.com/us/en) created with [Contentful](https://www.contentful.com/) CMS and [NextJS](https://nextjs.org/)/React stack. Utility libraries used for organization was [Styled-Components](https://styled-components.com/) and [Storybook](https://storybook.js.org/) for component documentation.
 
 This project was my own individual test of taking on a challenge of learning new technologies by myself I wasn't familiar with in order to gain even more understanding of the full-stack development cycle.
 
@@ -61,10 +61,10 @@ const Banner = ({
 
 ## Dynamic Nav Bar
 ### My Version
-<img src='https://imgur.com/0P2xahp/' width='800' height='auto'>
+<div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/gNKdpeMUFh2eTAyDeA" width="800" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
 
 ## Actual Site
-<img src='https://imgur.com/BH7WhYK/' width='800' height='auto'>
+<div style="width:100%;height:0;padding-bottom:48%;position:relative;"><iframe src="https://giphy.com/embed/Alk3V9sVbvsmyiJgeJ" width="800" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
 
 Using styled-components makes it easier to differentiate between divs and parent-children relationships.
 
