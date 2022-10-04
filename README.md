@@ -3,8 +3,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 # Specialized Clone
 This is a clone of [Specialized](https://www.specialized.com/us/en) created with [Contentful](https://www.contentful.com/) CMS and [NextJS](https://nextjs.org/)/React stack. Utility libraries used for organization was [Styled-Components](https://styled-components.com/) and [Storybook](https://storybook.js.org/) for component documentation.
 
-This project was my own individual test of taking on a challenge of learning new technologies by myself I wasn't familiar with in order to gain even more understanding of the full-stack development cycle.
-
 ```zsh
 npm install
 # then
