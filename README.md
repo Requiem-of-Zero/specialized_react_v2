@@ -64,7 +64,7 @@ const Banner = ({
 <img src='/src/assets/images/my-nav.gif' width='800' height='auto'>
 
 ## Actual Site
-<img src='/src/assets/images/actual-nav.gif width='800' height='auto'>
+<img src='/src/assets/images/actual-nav.gif' width='800' height='auto'>
 
 Using styled-components makes it easier to differentiate between divs and parent-children relationships.
 
