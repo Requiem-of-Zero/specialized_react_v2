@@ -62,11 +62,11 @@ const Banner = ({
 ## Dynamic Nav Bar
 ### My Version
 
-<iframe src="https://giphy.com/embed/gNKdpeMUFh2eTAyDeA" width="800" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<img src='/src/assets/images/specialized_mine.png' width='800' height='auto'>
 
 
 ## Actual Site
-<iframe src="https://giphy.com/embed/Alk3V9sVbvsmyiJgeJ" width="800" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<img src='/src/assets/images/specialized_mine.png' width='800' height='auto'>
 
 Using styled-components makes it easier to differentiate between divs and parent-children relationships.
 
