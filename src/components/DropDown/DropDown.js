@@ -50,7 +50,6 @@ const DropDown = ({
         <MiddleContainer>
           {categorySections.map((section, i) => {
             const key = "middle_category_section-" + i;
-            console.log(section);
             return (
               <CategorySection
                 key={key}

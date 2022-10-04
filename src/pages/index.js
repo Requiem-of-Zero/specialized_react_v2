@@ -5,7 +5,6 @@ import Banner from "../components/Banner/Banner";
 import ShopTiles from "../components/ShopTiles/ShopTiles";
 import QuadBanner from "../components/QuadBanner/QuadBanner";
 import Footer from "../components/Footer/Footer";
-import { useSession, signIn, signOut } from "next-auth/react";
 import getEntryById from "../util/getEntryById";
 import handleData from "../util/handleListData";
 
