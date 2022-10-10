@@ -343,4 +343,4 @@ export const navBarData = {
 ## Future Features
     * Working on backend with Prisma, initial database set up is done
     * Design the cart feature and adding products to the cart
-    * Incorporating CRUD features with Contentful as backend
+    * Incorporating CRUD features with Prisma as backend
